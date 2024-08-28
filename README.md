@@ -1,2 +1,2 @@
 # portfolio-website
-Repository to host my portfolio website
+This is the angular version of the website, the original version is a pure html, css and js version that i made following a tutorial, this branch represents my attempt at recreating that project and hopefully optimising it using Angular & ts !
