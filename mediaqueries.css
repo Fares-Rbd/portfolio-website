@@ -1,9 +1,16 @@
 @media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
   .about-containers {
     flex-wrap: wrap;
   }
+  #contact,
+  #projects {
+    height: fit-content;
+  }
 }
-
 @media screen and (max-width: 800px) {
   #desktop-nav {
     display: none;
@@ -11,13 +18,25 @@
   #hamburger-nav {
     display: flex;
     height: fit-content;
-    padding-top: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    position: fixed; /* Make the menu stay fixed at the top */
+    top: 0; /* Position it at the top of the screen */
+    left: 0; /* Align it to the left side of the screen */
+    width: 100%; /* Make the menu span the full width of the screen */
+    background-color: #fff; /* Optional: Set a background color to make it stand out */
+    z-index: 1000; /* Ensure it stays on top of other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  #profile {
+    margin-top: 4rem;
   }
   /* #about {
     margin-top: 5rem;
   } */
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1450px) {
   .social-container {
     gap: 2rem;
   }
