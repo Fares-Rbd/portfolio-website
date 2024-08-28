@@ -35,9 +35,11 @@ nav,
 }
 
 nav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
+  /* height: 17vh; */
 }
 
 .nav-links {
@@ -333,7 +335,7 @@ section {
   display: flex;
   text-align: initial;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   gap: 2.5rem;
   justify-content: space-around;
 }
@@ -383,7 +385,7 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  height: 50vh;
 }
 
 .contact-info-upper-container {
