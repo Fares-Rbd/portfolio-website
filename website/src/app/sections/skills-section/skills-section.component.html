@@ -1,144 +1,32 @@
 <section id="experience">
   <p class="section__text__p1">Explore My</p>
-  <h1 class="title">Skills</h1>
+  <h1 class="title">Skill Set</h1>
   <div class="experience-details-container">
     <div class="about-containers">
-      <div class="details-container">
-        <h2 class="experience-subtitle">Frontend Development</h2>
-        <div class="article-container">
-          <article>
-            <img
-              src="./assets/checkmark.png"
-              alt="Experience Icon"
-              class="icon"
-            />
-            <div>
-              <h3>HTML</h3>
-            </div>
-          </article>
-          <article>
-            <img
-              src="./assets/checkmark.png"
-              alt="Experience Icon"
-              class="icon"
-            />
-            <div>
-              <h3>CSS</h3>
-            </div>
-          </article>
-          <article>
-            <img
-              src="./assets/checkmark.png"
-              alt="Experience Icon"
-              class="icon"
-            />
-            <div>
-              <h3>Angular</h3>
-            </div>
-          </article>
-          <article>
-            <img
-              src="./assets/checkmark.png"
-              alt="Experience Icon"
-              class="icon"
-            />
-            <div>
-              <h3>Spring Boot</h3>
-            </div>
-          </article>
-          <article>
-            <img
-              src="./assets/checkmark.png"
-              alt="Experience Icon"
-              class="icon"
-            />
-            <div>
-              <h3>Git</h3>
-            </div>
-          </article>
-          <article>
-            <img
-              src="./assets/checkmark.png"
-              alt="Experience Icon"
-              class="icon"
-            />
-            <div>
-              <h3>Docker</h3>
-            </div>
-          </article>
-        </div>
-      </div>
-      <div class="details-container">
-        <h2 class="experience-subtitle">Backend Development</h2>
-        <div class="article-container">
-          <article>
-            <img
-              src="./assets/checkmark.png"
-              alt="Experience Icon"
-              class="icon"
-            />
-            <div>
-              <h3>HTML</h3>
-            </div>
-          </article>
-          <article>
-            <img
-              src="./assets/checkmark.png"
-              alt="Experience Icon"
-              class="icon"
-            />
-            <div>
-              <h3>CSS</h3>
-            </div>
-          </article>
-          <article>
-            <img
-              src="./assets/checkmark.png"
-              alt="Experience Icon"
-              class="icon"
-            />
-            <div>
-              <h3>Angular</h3>
-            </div>
-          </article>
-          <article>
-            <img
-              src="./assets/checkmark.png"
-              alt="Experience Icon"
-              class="icon"
-            />
-            <div>
-              <h3>Spring Boot</h3>
-            </div>
-          </article>
-          <article>
-            <img
-              src="./assets/checkmark.png"
-              alt="Experience Icon"
-              class="icon"
-            />
-            <div>
-              <h3>Git</h3>
-            </div>
-          </article>
-          <article>
-            <img
-              src="./assets/checkmark.png"
-              alt="Experience Icon"
-              class="icon"
-            />
-            <div>
-              <h3>Docker</h3>
-            </div>
-          </article>
+      <div *ngFor="let skillset of skills" class="details-container">
+        <div>
+          <h2 class="experience-sub-title">{{ skillset.category }}</h2>
+          <div class="article-container">
+            <article *ngFor="let skill of skillset.skills">
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>{{ skill.name }}</h3>
+                <p>{{ skill.level }}</p>
+              </div>
+            </article>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <img
-    src="../../../assets/arrow.png"
+    src="./assets/arrow.png"
     alt="Arrow-icon"
     class="icon arrow"
-    onclick="location.href='./#about'"
+    onclick="location.href='./#projects'"
   />
 </section>

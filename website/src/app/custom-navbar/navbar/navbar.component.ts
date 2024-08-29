@@ -1,4 +1,4 @@
-import { Component, ElementRef } from '@angular/core';
+import { Component, ElementRef, HostListener, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -6,7 +6,7 @@ import { Component, ElementRef } from '@angular/core';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent {
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef, private renderer: Renderer2) {}
 
   toggleMenu() {
     const menu = this.el.nativeElement.querySelector(
@@ -42,5 +42,19 @@ export class NavbarComponent {
       },
       { once: true }
     );
+  }
+
+  @HostListener('window:scroll', ['$event'])
+  onScroll(event: Event): void {
+    const scrollPosition = window.scrollY;
+    const navbar = document.getElementById('hamburger-nav');
+
+    if (navbar) {
+      if (scrollPosition > 0) {
+        this.renderer.addClass(navbar, 'shadow');
+      } else {
+        this.renderer.removeClass(navbar, 'shadow');
+      }
+    }
   }
 }
