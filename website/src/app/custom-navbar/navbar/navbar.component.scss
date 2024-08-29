@@ -10,7 +10,6 @@ nav {
   padding-bottom: 1rem;
   justify-content: space-around;
   align-items: center;
-  /* height: 17vh; */
 }
 
 .nav-links {
@@ -112,5 +111,45 @@ a:hover {
 @keyframes fadeIn {
   to {
     opacity: 1;
+  }
+}
+
+// Media query for screens up to 800px
+@media screen and (max-width: 800px) {
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+    height: fit-content;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+}
+
+// Media query for screens up to 1450px
+@media screen and (max-width: 1450px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .nav-links li a {
+    font-size: 1rem;
+  }
+}
+
+// Media query for screens up to 600px
+@media screen and (max-width: 600px) {
+  .logo {
+    font-size: 2rem;
   }
 }
