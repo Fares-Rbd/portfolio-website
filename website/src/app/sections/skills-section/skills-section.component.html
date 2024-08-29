@@ -3,15 +3,15 @@
   <h1 class="title">Skill Set</h1>
   <div class="experience-details-container">
     <div class="about-containers">
-      <div *ngFor="let skillset of skills" class="details-container">
+      <div *ngFor="let skillset of skills" class="skills-details-container">
         <div>
           <h2 class="experience-sub-title">{{ skillset.category }}</h2>
           <div class="article-container">
             <article *ngFor="let skill of skillset.skills">
               <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
+                src="../../../assets/logos/c++.png"
+                alt="skill icon"
+                class="skill-icon"
               />
               <div>
                 <h3>{{ skill.name }}</h3>
