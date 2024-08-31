@@ -7,6 +7,8 @@ import { SkillsSectionComponent } from './skills-section/skills-section.componen
 import { ProjectsSectionComponent } from './projects-section/projects-section.component';
 import { ContactSectionComponent } from './contact-section/contact-section.component';
 
+import { TranslateModule } from '@ngx-translate/core';
+
 const components = [SectionsComponent, ProfileSectionComponent];
 
 @NgModule({
@@ -18,7 +20,7 @@ const components = [SectionsComponent, ProfileSectionComponent];
     ProjectsSectionComponent,
     ContactSectionComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule,TranslateModule],
   exports: [components],
 })
 export class SectionsModule {}

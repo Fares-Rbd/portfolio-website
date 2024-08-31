@@ -1,21 +1,21 @@
 <section id="experience">
-  <p class="section__text__p1">Explore My</p>
-  <h1 class="title">Skill Set</h1>
+  <p class="section__text__p1">{{'EXPLORE_MY' | translate}}</p>
+  <h1 class="title">{{'SKILL_SET' |translate}}</h1>
   <div class="experience-details-container">
     <div class="about-containers">
       <div *ngFor="let skillset of skills" class="skills-details-container">
         <div>
-          <h2 class="experience-sub-title">{{ skillset.category }}</h2>
+          <h2 class="experience-sub-title">{{ skillset.category |translate}}</h2>
           <div class="article-container">
             <article *ngFor="let skill of skillset.skills">
               <img
-                src="../../../assets/logos/c++.png"
+                [src]="skill.iconPath"
                 alt="skill icon"
                 class="skill-icon"
               />
               <div>
                 <h3>{{ skill.name }}</h3>
-                <p>{{ skill.level }}</p>
+                <p>{{ skill.level | translate}}</p>
               </div>
             </article>
           </div>

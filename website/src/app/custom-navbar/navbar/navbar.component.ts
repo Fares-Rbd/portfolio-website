@@ -1,4 +1,5 @@
 import { Component, ElementRef, HostListener, Renderer2 } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-navbar',
@@ -6,42 +7,37 @@ import { Component, ElementRef, HostListener, Renderer2 } from '@angular/core';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent {
-  constructor(private el: ElementRef, private renderer: Renderer2) {}
+  currentLang: string = 'EN'; // Default language
+
+  constructor(
+    private el: ElementRef,
+    private renderer: Renderer2,
+    private translate: TranslateService
+  ) {
+    // Initialize with current language
+    this.currentLang = this.translate.currentLang || 'EN';
+  }
 
   toggleMenu() {
-    const menu = this.el.nativeElement.querySelector(
-      '.menu-links'
-    ) as HTMLElement;
-    const icon = this.el.nativeElement.querySelector(
-      '.hamburger-icon span'
-    ) as HTMLElement;
+    const menu = this.el.nativeElement.querySelector('.menu-links') as HTMLElement;
+    const icon = this.el.nativeElement.querySelector('.hamburger-icon span') as HTMLElement;
 
-    // Toggle the menu visibility
     menu.classList.toggle('open');
-
-    // Apply fade-out effect to the current icon
     icon.classList.add('fade-out');
 
-    // Change the icon after the fade-out animation is done
     setTimeout(() => {
       if (menu.classList.contains('open')) {
         icon.textContent = 'menu_open';
       } else {
         icon.textContent = 'menu';
       }
-      // Remove fade-out and apply fade-in effect
       icon.classList.remove('fade-out');
       icon.classList.add('fade-in');
-    }, 100); // Match the timeout to the transition duration (0.3s)
+    }, 100);
 
-    // Clean up the fade-in class after the animation completes
-    icon.addEventListener(
-      'animationend',
-      () => {
-        icon.classList.remove('fade-in');
-      },
-      { once: true }
-    );
+    icon.addEventListener('animationend', () => {
+      icon.classList.remove('fade-in');
+    }, { once: true });
   }
 
   @HostListener('window:scroll', ['$event'])
@@ -56,5 +52,10 @@ export class NavbarComponent {
         this.renderer.removeClass(navbar, 'shadow');
       }
     }
+  }
+
+  changeLanguage(lang: string) {
+    this.translate.use(lang);
+    this.currentLang = lang;
   }
 }

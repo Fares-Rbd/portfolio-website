@@ -6,4 +6,5 @@ export interface SkillsInfo {
 export interface Skill {
   name: string;
   level: string;
+  iconPath: string;
 }

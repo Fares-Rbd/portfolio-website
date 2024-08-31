@@ -1,8 +1,13 @@
 /* DESKTOP NAV */
 
+
+#desktop-nav{
+  padding: .5rem;
+}
 nav,
 .nav-links {
   display: flex;
+  align-items: center;
 }
 
 nav {

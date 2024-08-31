@@ -1,6 +1,6 @@
 <section id="projects">
-  <p class="section__text__p1">Browse My</p>
-  <h1 class="title">Most Recent Projects</h1>
+  <p class="section__text__p1">{{ 'BROWSE_MY' | translate }}</p>
+  <h1 class="title">{{ 'MOST_RECENT_PROJECTS' | translate }}</h1>
   <div class="experience-details-container">
     <div class="about-containers">
       <div
@@ -21,7 +21,7 @@
               class="btn btn-color-2 project-btn"
               (click)="openGitHub(project.githubLink)"
             >
-              Check it on GitHub !
+              {{ 'CHECK_IT_ON_GITHUB' | translate }}
             </button>
           </div>
         </div>

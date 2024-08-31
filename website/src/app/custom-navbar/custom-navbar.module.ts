@@ -2,6 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './navbar/navbar.component';
 
+import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
+
+import { TranslateModule } from '@ngx-translate/core';
 
 
 const components = [
@@ -13,7 +17,10 @@ const components = [
     components
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    NzButtonModule,
+    NzDropDownModule,
+    TranslateModule
   ],
   exports: [
     components

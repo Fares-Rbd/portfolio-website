@@ -8,67 +8,71 @@ import { SkillsInfo } from 'src/app/models/SkillsInfo';
 export class SkillsSectionComponent {
   skills: SkillsInfo[] = [
     {
-      category: 'Cloud Computing',
+      category: 'PROGRAMMING_LANGUAGES',
       skills: [
-        { name: 'Amazon Web Services', level: 'Intermediate' },
-        { name: 'Microsoft Azure', level: 'Basic' },
+        { name: 'Python', level: 'EXPERIENCED', iconPath: './assets/logos/python.png' },
+        { name: 'Java', level: 'EXPERIENCED', iconPath: './assets/logos/java.png' },
+        { name: 'C++', level: 'INTERMEDIATE', iconPath: './assets/logos/c++.png' },
+        { name: 'C', level: 'INTERMEDIATE', iconPath: './assets/logos/c.png' },
+        { name: 'C#', level: 'BASIC', iconPath: './assets/logos/c-sharp.png' },
       ],
     },
     {
-      category: 'Programming Languages',
+      category: 'WEB_DEVELOPMENT', 
       skills: [
-        { name: 'Python', level: 'Experienced' },
-        { name: 'Java', level: 'Experienced' },
-        { name: 'C++', level: 'Intermediate' },
-        { name: 'C', level: 'Intermediate' },
-        { name: 'C#', level: 'Basic' },
+        { name: 'HTML5', level: 'EXPERIENCED', iconPath: './assets/logos/html.png' },
+        { name: 'CSS3', level: 'EXPERIENCED', iconPath: './assets/logos/css.png' },
+        { name: 'JavaScript', level: 'INTERMEDIATE', iconPath: './assets/logos/js.png' },
+        { name: 'TypeScript', level: 'INTERMEDIATE', iconPath: './assets/logos/ts.png' },
+        { name: 'Spring Boot', level: 'EXPERIENCED', iconPath: './assets/logos/springboot.png' },
+        { name: 'React JS', level: 'BASIC', iconPath: './assets/logos/react.png' },
+        { name: 'Angular', level: 'INTERMEDIATE', iconPath: './assets/logos/angular.svg' },
       ],
     },
     {
-      category: 'Web Development',
+      category: 'DATABASES',
       skills: [
-        { name: 'HTML5', level: 'Experienced' },
-        { name: 'CSS3', level: 'Experienced' },
-        { name: 'JavaScript', level: 'Intermediate' },
-        { name: 'TypeScript', level: 'Intermediate' },
-        { name: 'Spring Boot', level: 'Experienced' },
-        { name: 'React JS', level: 'Basic' },
-        { name: 'Angular', level: 'Intermediate' },
+        { name: 'MySQL', level: 'EXPERIENCED', iconPath: './assets/logos/mysql.png' },
+        { name: 'SQL3', level: 'EXPERIENCED', iconPath: './assets/logos/sql3.png' },
       ],
     },
     {
-      category: 'Databases',
+      category: 'CLOUD_COMPUTING', 
       skills: [
-        { name: 'MySQL', level: 'Experienced' },
-        { name: 'SQL3', level: 'Experienced' },
+        { name: 'Amazon Web Services', level: 'INTERMEDIATE', iconPath: './assets/logos/aws.webp' },
+        { name: 'Microsoft Azure', level: 'BASIC', iconPath: './assets/logos/azure.png' },
       ],
     },
     {
-      category: 'Testing',
+      category: 'TESTING', 
       skills: [
-        { name: 'JUnit', level: 'Intermediate' },
-        { name: 'Mockito', level: 'Basic' },
-        { name: 'Postman', level: 'Experienced' },
+        { name: 'JUnit', level: 'INTERMEDIATE', iconPath: './assets/logos/junit.png' },
+        { name: 'Mockito', level: 'BASIC', iconPath: './assets/logos/mockito.png' },
+        { name: 'Postman', level: 'EXPERIENCED', iconPath: './assets/logos/postman.png' },
       ],
     },
     {
-      category: 'Collaborative Tools',
+      category: 'VERSION_CONTROL', 
       skills: [
-        { name: 'Git', level: 'Intermediate' },
-        { name: 'Jira', level: 'Basic' },
-        { name: 'BitBucket', level: 'Intermediate' },
+        { name: 'Git', level: 'INTERMEDIATE', iconPath: './assets/logos/git.png' },
+        { name: 'GitHub', level: 'INTERMEDIATE', iconPath: './assets/logos/github.png' },
+        { name: 'BitBucket', level: 'INTERMEDIATE', iconPath: './assets/logos/bitbucket.png' },
       ],
     },
     {
-      category: 'Containerization',
-      skills: [{ name: 'Docker', level: 'Basic' }],
+      category: 'COLLABORATIVE_TOOLS', 
+      skills: [
+        { name: 'Jira', level: 'BASIC', iconPath: './assets/logos/jira.png' },
+      ],
     },
     {
-      category: 'Modeling',
+      category: 'CONTAINERIZATION', 
       skills: [
-        { name: 'Merise', level: 'Intermediate' },
-        { name: 'UML', level: 'Intermediate' },
+        { name: 'Docker', level: 'BASIC', iconPath: './assets/logos/docker.png' },
       ],
     },
   ];
+  
+  
+  
 }

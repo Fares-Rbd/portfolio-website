@@ -1,35 +1,35 @@
 <section id="profile">
-    <div class="section__pic-container">
-      <img src="./assets/profile-picture.png" alt="Fares' profile picture" />
+  <div class="section__pic-container">
+    <img src="./assets/profile-picture.png" alt="{{ 'NAME' | translate }}" />
+  </div>
+  <div class="section__text">
+    <p class="section__text__p1">{{ 'HELLO_IM' | translate }}</p>
+    <h1 class="title">{{ 'NAME' | translate }}</h1>
+    <p class="section__text__p2">{{ 'PROFESSION' | translate }}</p>
+    <div class="btn-container">
+      <button
+        class="btn btn-color-2"
+        onclick="window.open('./assets/CV_Fares_Raboudi.pdf', '_blank');"
+      >
+        {{ 'DOWNLOAD_CV' | translate }}
+      </button>
+      <button class="btn btn-color-1" onclick="location.href='./#contact'">
+        {{ 'CONTACT_INFO' | translate }}
+      </button>
     </div>
-    <div class="section__text">
-      <p class="section__text__p1">Hello, I'm</p>
-      <h1 class="title">Fares Raboudi</h1>
-      <p class="section__text__p2">Software Engineering Student</p>
-      <div class="btn-container">
-        <button
-          class="btn btn-color-2"
-          onclick="window.open('./assets/CV_Fares_Raboudi.pdf', '_blank');"
-        >
-          Download CV
-        </button>
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">
-          Contact Info
-        </button>
-      </div>
-      <div class="social-container">
-        <img
-          src="./assets/linkedin.png"
-          alt="My LinkedIn Profile"
-          class="icon"
-          onclick="window.open('https://www.linkedin.com/in/faresrbd/', '_blank');"
-        />
-        <img
-          src="./assets/github.png"
-          alt="My GitHUb Profile"
-          class="icon"
-          onclick="window.open('https://github.com/Fares-Rbd', '_blank');"
-        />
-      </div>
+    <div class="social-container">
+      <img
+        src="./assets/linkedin.png"
+        alt="{{ 'LINKEDIN_PROFILE' | translate }}"
+        class="icon"
+        onclick="window.open('https://www.linkedin.com/in/faresrbd/', '_blank');"
+      />
+      <img
+        src="./assets/github.png"
+        alt="{{ 'GITHUB_PROFILE' | translate }}"
+        class="icon"
+        onclick="window.open('https://github.com/Fares-Rbd', '_blank');"
+      />
     </div>
-  </section>
+  </div>
+</section>
