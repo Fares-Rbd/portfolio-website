@@ -1,0 +1,394 @@
+/* SECTIONS */
+
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.section-container {
+  display: flex;
+}
+
+/* PROFILE SECTION */
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 50vh;
+}
+
+.section__pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+.section__text {
+  align-self: center;
+  text-align: center;
+}
+
+.section__text p {
+  font-weight: 600;
+}
+
+.section__text__p1 {
+  text-align: center;
+}
+
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.social-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+h3{
+  text-wrap: nowrap;
+}
+
+/* ICONS */
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+/* ABOUT SECTION */
+
+#about {
+  position: relative;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about-details-container {
+  justify-content:baseline;
+  flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-pic {
+  border-radius: 2rem;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  min-width: 15rem;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+.skills-details-container {
+  padding: 1.5rem;
+  background: white;
+  min-width: 15rem;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+/* EXPERIENCE SECTION */
+
+#experience {
+  position: relative;
+}
+
+.experience-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  text-align: center;
+  flex: 0;
+  flex-direction: column;
+  width: 10rem;
+  gap: 0.5rem;
+}
+
+
+.article-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 10rem;
+  gap: 0.5rem;
+}
+
+article .skill-icon {
+  cursor: default;
+  max-width: 100%;  // Ensure the image doesn't overflow
+  height: auto;
+}
+
+article .icon {
+  cursor: default;
+}
+
+/* PROJECTS SECTION */
+
+#projects {
+  position: relative;
+}
+
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.color-container:hover {
+  transform: translateY(-5px) scale(1.03); // Move up and slightly scale up
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Adds a shadow for better visual effect
+  background: rgb(230, 230, 230); // Darkens the background slightly
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+}
+
+.project-title {
+  margin: 1rem auto;
+  color: black;
+  text-align: center;
+}
+
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+/* CONTACT */
+
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 50vh;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: (250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+  gap: 0.5rem;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 2.5rem;
+}
+
+.contact-link:hover {
+  text-decoration: none;
+}
+
+section,
+.section-container {
+  height: fit-content;
+}
+
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .about-containers {
+    flex-wrap: wrap;
+  }
+  #contact,
+  #projects {
+    height: fit-content;
+  }
+}
+@media screen and (max-width: 800px) {
+  #desktop-nav {
+    display: none;
+  }
+
+  #profile,
+  #about,
+  #projects,
+  #experience {
+    margin-top: 4rem;
+  }
+  .arrow {
+    display: none;
+  }
+}
+@media screen and (max-width: 1450px) {
+  .social-container {
+    gap: 2rem;
+  }
+
+  .social-container .icon {
+    height: 3rem;
+  }
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+  #profile,
+  .section-container {
+    display: block;
+  }
+
+  section {
+    margin: 0 5%;
+  }
+
+  .about-containers {
+    margin-top: 0;
+  }
+  #contact {
+    height: 40vh;
+  }
+  #profile {
+    height: fit-content;
+    margin-bottom: 0;
+  }
+
+  article {
+    font-size: 1rem;
+  }
+
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+
+  .contact-info-container {
+    margin: 0;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+
+  .experience-subtitle {
+    font-size: 1.25rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .section__pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+
+  .text-container {
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section__text__p2 {
+    font-size: 1.2rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  footer {
+    nav {
+      height: 1rem;
+      margin-bottom: 0;
+    }
+  }
+}

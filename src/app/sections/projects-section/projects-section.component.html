@@ -1,0 +1,37 @@
+<section id="projects">
+  <p class="section__text__p1">{{ 'BROWSE_MY' | translate }}</p>
+  <h1 class="title">{{ 'MOST_RECENT_PROJECTS' | translate }}</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+      <div
+        *ngFor="let project of projects"
+        class="details-container color-container"
+      >
+        <div class="article-container">
+          <img
+            [src]="project.coverImageUrl"
+            alt="{{ project.projectTitle }}"
+            class="project-img"
+          />
+          <h2 class="experience-subtitle project-title">
+            {{ project.projectTitle }}
+          </h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              (click)="openGitHub(project.githubLink)"
+            >
+              {{ 'CHECK_IT_ON_GITHUB' | translate }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img
+    src="./assets/icons/arrow.png"
+    alt="Arrow-icon"
+    class="icon arrow"
+    onclick="location.href='./#contact'"
+  />
+</section>

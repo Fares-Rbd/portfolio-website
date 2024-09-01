@@ -1,0 +1,174 @@
+/* DESKTOP NAV */
+
+
+#desktop-nav{
+  padding: .5rem;
+}
+nav,
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+a:hover {
+  color: gray;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+  width: 20rem;
+}
+
+.logo:hover {
+  cursor: default;
+}
+
+/* HAMBURGER MENU */
+
+#hamburger-nav {
+  display: none;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+  max-height: 300px;
+}
+
+.hamburger-icon span {
+  display: inline-block;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hamburger-icon span.fade-out {
+  opacity: 0;
+  position: absolute;
+}
+
+.hamburger-icon span.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.3s forwards ease-in-out;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+// Media query for screens up to 800px
+@media screen and (max-width: 800px) {
+  #desktop-nav {
+    display: none;
+  }
+
+  /* Initial state with no shadow */
+  #hamburger-nav {
+    display: flex;
+    height: fit-content;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    transition: box-shadow 0.2s ease; /* Smooth transition */
+  }
+
+  /* Shadow class for scrolling effect */
+  .shadow {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .logo img {
+    width: 10rem;
+  }
+}
+
+// Media query for screens up to 1450px
+@media screen and (max-width: 1450px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .nav-links li a {
+    font-size: 1rem;
+  }
+}
+
+// Media query for screens up to 600px
+@media screen and (max-width: 600px) {
+  .logo {
+    font-size: 2rem;
+  }
+}
