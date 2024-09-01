@@ -123,17 +123,15 @@ a:hover {
   }
 }
 
-// Media query for screens up to 800px
 @media screen and (max-width: 800px) {
   #desktop-nav {
     display: none;
   }
 
-  /* Initial state with no shadow */
   #hamburger-nav {
     display: flex;
     height: fit-content;
-    padding-top: 1rem;
+    padding-top: 1rem ; 
     padding-bottom: 1rem;
     margin-bottom: 1rem;
     position: fixed;
@@ -142,10 +140,9 @@ a:hover {
     width: 100%;
     background-color: #fff;
     z-index: 1000;
-    transition: box-shadow 0.2s ease; /* Smooth transition */
+    transition: box-shadow 0.2s ease; 
   }
 
-  /* Shadow class for scrolling effect */
   .shadow {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
@@ -155,7 +152,6 @@ a:hover {
   }
 }
 
-// Media query for screens up to 1450px
 @media screen and (max-width: 1450px) {
   .logo {
     font-size: 1.5rem;
@@ -166,7 +162,6 @@ a:hover {
   }
 }
 
-// Media query for screens up to 600px
 @media screen and (max-width: 600px) {
   .logo {
     font-size: 2rem;

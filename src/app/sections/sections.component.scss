@@ -258,7 +258,7 @@ article .icon {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  margin: 1rem;
+  margin: .5rem;
 }
 
 .contact-info-container p {
@@ -280,6 +280,12 @@ article .icon {
 section,
 .section-container {
   height: fit-content;
+}
+
+.left-navbar-container{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
 
 @media screen and (max-width: 1400px) {
