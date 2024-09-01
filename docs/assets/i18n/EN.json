@@ -1,7 +1,7 @@
 {
   "GET_TO_KNOW_MORE": "Get To Know More",
   "ABOUT_ME": "About Me",
-  "INTRO_TEXT": "I am a passionate software engineering student at the Faculty of Science Tunis (FST) with a strong foundation in problem-solving and a keen interest in web development. In my first year, I achieved an excellent average. With a focus on software development, I have successfully completed several projects, including a web redesign, library management software, a full-stack web application for hotel management, a 2D platform game, a program for creating encrypted QR codes, and an AWS cloud solution for hosting 3-tier web apps. These experiences have equipped me with a diverse skill set in Java, JavaScript, Python, and C#, as well as experience with services like AWS and frameworks like Angular, React and Spring Boot. With a dedication to continuous growth, I actively participate in sports and programming-related online courses. I am driven to seek new challenges, expand my knowledge, and contribute to the field of software engineering.",
+  "INTRO_TEXT": "I am a software engineering student at the Faculty of Science Tunis (FST) with a strong foundation in problem-solving and web development. I have completed projects in web redesign, library management, hotel management, game development, encrypted QR code creation, and AWS cloud solutions. My skills include Java, JavaScript, Python, C#, Angular, React, and Spring Boot. I am passionate about continuous learning, actively participating in sports and programming courses, and eager to take on new challenges in software engineering.",
   "EXPERIENCE": "Experience",
   "SUMMER_INTERNSHIP_AT_NGSIGN": "SUMMER INTERNSHIP AT NGSIGN",
   "NGSIGN_DESCRIPTION": "Developed a SSL Certificate Management web platform that allows users to upload, store, renew their different SSL certificates as well as link them to their organisation's departments for easier management.",
@@ -46,8 +46,7 @@
   "CONTAINERIZATION": "Containerization",
   "EXPERIENCED": "Experienced",
   "INTERMEDIATE": "Intermediate",
-  "BASIC": "Basic",  
+  "BASIC": "Basic",
   "COPYRIGHT": "Copyright",
   "ALL_RIGHTS_RESERVED": "All Rights Reserved"
-
 }

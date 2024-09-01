@@ -19,8 +19,12 @@ export class NavbarComponent {
   }
 
   toggleMenu() {
-    const menu = this.el.nativeElement.querySelector('.menu-links') as HTMLElement;
-    const icon = this.el.nativeElement.querySelector('.hamburger-icon span') as HTMLElement;
+    const menu = this.el.nativeElement.querySelector(
+      '.menu-links'
+    ) as HTMLElement;
+    const icon = this.el.nativeElement.querySelector(
+      '.hamburger-icon span'
+    ) as HTMLElement;
 
     menu.classList.toggle('open');
     icon.classList.add('fade-out');
@@ -35,9 +39,13 @@ export class NavbarComponent {
       icon.classList.add('fade-in');
     }, 100);
 
-    icon.addEventListener('animationend', () => {
-      icon.classList.remove('fade-in');
-    }, { once: true });
+    icon.addEventListener(
+      'animationend',
+      () => {
+        icon.classList.remove('fade-in');
+      },
+      { once: true }
+    );
   }
 
   @HostListener('window:scroll', ['$event'])
@@ -57,5 +65,20 @@ export class NavbarComponent {
   changeLanguage(lang: string) {
     this.translate.use(lang);
     this.currentLang = lang;
+  }
+
+  // Adding the new functionality
+  toggleHamMenu() {
+    const hamMenu = this.el.nativeElement.querySelector(
+      '.ham-menu'
+    ) as HTMLElement;
+    const offScreenMenu = this.el.nativeElement.querySelector(
+      '.off-screen-menu'
+    ) as HTMLElement;
+
+    if (hamMenu && offScreenMenu) {
+      hamMenu.classList.toggle('active');
+      offScreenMenu.classList.toggle('active');
+    }
   }
 }

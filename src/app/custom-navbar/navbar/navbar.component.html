@@ -47,55 +47,59 @@
   <div class="logo">
     <img src="./assets/icons/logo-no-background.png" alt="Logo" />
   </div>
-
-  <div class="hamburger-menu">
-    <div class="left-navbar-container">
-      <button
-        nz-button
-        nzType="default"
-        nzShape="circle"
-        nz-dropdown
-        [nzDropdownMenu]="hamburgerMenu"
-      >
-        <span class="material-icons-outlined">language</span>
-      </button>
-      <nz-dropdown-menu #hamburgerMenu="nzDropdownMenu">
-        <ul nz-menu>
-          <li nz-menu-item (click)="changeLanguage('EN')">
-            {{ "ENGLISH" | translate }}
-          </li>
-          <li nz-menu-item (click)="changeLanguage('FR')">
-            {{ "FRENCH" | translate }}
-          </li>
-        </ul>
-      </nz-dropdown-menu>
-      <div class="hamburger-icon" (click)="toggleMenu()">
-        <span class="material-icons-outlined">menu</span>
-      </div>
-      <div class="menu-links">
-        <ul>
-          <li>
-            <a href="#about" (click)="toggleMenu()">{{
-              "ABOUT" | translate
-            }}</a>
-          </li>
-          <li>
-            <a href="#experience" (click)="toggleMenu()">{{
-              "SKILLSET" | translate
-            }}</a>
-          </li>
-          <li>
-            <a href="#projects" (click)="toggleMenu()">{{
-              "PROJECTS" | translate
-            }}</a>
-          </li>
-          <li>
-            <a href="#contact" (click)="toggleMenu()">{{
-              "CONTACT" | translate
-            }}</a>
-          </li>
-        </ul>
-      </div>
+  <div class="right-side-container">
+    <button
+      nz-button
+      nzType="default"
+      nzShape="circle"
+      nz-dropdown
+      [nzDropdownMenu]="hamburgerMenu"
+    >
+      <span class="material-icons-outlined">language</span>
+    </button>
+    <nz-dropdown-menu #hamburgerMenu="nzDropdownMenu">
+      <ul nz-menu>
+        <li nz-menu-item (click)="changeLanguage('EN')">
+          {{ "ENGLISH" | translate }}
+        </li>
+        <li nz-menu-item (click)="changeLanguage('FR')">
+          {{ "FRENCH" | translate }}
+        </li>
+      </ul>
+    </nz-dropdown-menu>
+    <div class="ham-menu" (click)="toggleHamMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
+  </div>
+
+  <!-- </nav> -->
+
+  <div class="off-screen-menu">
+    <ul class="menu-links">
+      <li>
+        <img src="./assets/icons/about.png" class="icon" alt="" />
+        <a href="#about" (click)="toggleHamMenu()">{{ "ABOUT" | translate }}</a>
+      </li>
+      <li>
+        <img src="./assets/icons/skills.png" alt="" />
+        <a href="#experience" (click)="toggleHamMenu()">{{
+          "SKILLSET" | translate
+        }}</a>
+      </li>
+      <li>
+        <img src="./assets/icons/projects.png" alt="" />
+        <a href="#projects" (click)="toggleHamMenu()">{{
+          "PROJECTS" | translate
+        }}</a>
+      </li>
+      <li>
+        <img src="./assets/icons/contact.png" alt="" />
+        <a href="#contact" (click)="toggleHamMenu()">{{
+          "CONTACT" | translate
+        }}</a>
+      </li>
+    </ul>
   </div>
 </nav>

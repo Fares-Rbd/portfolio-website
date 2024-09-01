@@ -1,7 +1,7 @@
 {
   "GET_TO_KNOW_MORE": "En savoir plus",
   "ABOUT_ME": "À propos de moi",
-  "INTRO_TEXT": "Je suis étudiant en ingénierie en génie logiciel à la Faculté des Sciences de Tunis (FST), passionné par le développement web et doté d'une solide expertise en résolution de problèmes. Dès ma première année, j'ai obtenu d'excellents résultats académiques. Je me suis particulièrement concentré sur le développement logiciel, ce qui m'a permis de mener à bien divers projets tels qu'une refonte de site web, un logiciel de gestion de bibliothèque, une application web full-stack pour la gestion d'un hôtel, un jeu de plateforme en 2D, un programme de création de QR codes cryptés et une solution cloud AWS pour héberger des applications web à trois niveaux. Ces expériences m'ont permis de développer des compétences variées en Java, JavaScript, Python et C#, tout en acquérant une expérience précieuse avec des services comme AWS et des frameworks tels qu'Angular, React et Spring Boot. En parallèle de mes études, je participe activement à des sports et suis des cours en ligne sur la programmation, ce qui témoigne de mon engagement envers l'apprentissage continu. Motivé par la recherche de nouveaux défis, je suis déterminé à élargir mes connaissances et à contribuer de manière significative au domaine de l'ingénierie logicielle.",
+  "INTRO_TEXT": "Je suis étudiant en génie logiciel à la Faculté des Sciences de Tunis (FST) avec une solide base en résolution de problèmes et développement web. J'ai réalisé des projets de refonte de site web, gestion de bibliothèque, gestion hôtelière, développement de jeux, création de QR codes cryptés, et solutions cloud AWS. Mes compétences incluent Java, JavaScript, Python, C#, Angular, React et Spring Boot. Passionné motivé pour l'apprentissage continu, je participe activement à des cours de programmation et sports, et je suis prêt à relever de nouveaux défis en génie logiciel.",
   "EXPERIENCE": "Expérience",
   "SUMMER_INTERNSHIP_AT_NGSIGN": "Stage d'été chez NGSign",
   "NGSIGN_DESCRIPTION": "Développement d'une plateforme de gestion des certificats SSL permettant aux utilisateurs de télécharger, stocker, renouveler leurs certificats SSL et de les associer aux départements de leur organisation pour une gestion simplifiée.",
@@ -49,5 +49,4 @@
   "BASIC": "Débutant",
   "COPYRIGHT": "Droits d'auteur",
   "ALL_RIGHTS_RESERVED": "Tous droits réservés"
-
 }
